@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Glitch OAuth 2 Demo - Server Side Auth</title>
+</head>
+<body>
+
+<div style="width: 600px; margin: 0 auto;">
+
+<h1>Glitch OAuth 2 Demo - Server Side Auth</h1>
