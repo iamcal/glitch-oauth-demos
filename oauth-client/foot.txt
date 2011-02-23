@@ -1,0 +1,15 @@
+<hr />
+
+<p>
+	This demo uses a client ID which is only allowed to request the <code>identity</code> scope.
+	Your own client ID will be able to request the <code>read</code> and <code>write</code> scopes, which are far better.
+</p>
+
+<p>
+	If you hit an error, you can <a href="./">start over</a>.
+</p>
+
+</div>
+
+</body>
+</html>
