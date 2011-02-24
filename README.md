@@ -1,4 +1,5 @@
-==Glitch OAuth 2 Demos==
+Glitch OAuth 2 Demos
+====================
 
 These demos show how to implement against the current Glitch OAuth 2.13 API.
 
