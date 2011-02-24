@@ -10,7 +10,6 @@
 	$args = array(
 		'response_type'	=> 'code',
 		'client_id'	=> $client_id,
-		'client_secret'	=> $client_secret,
 		'redirect_uri'	=> $redir_url,
 		'scope'		=> 'identity',
 		'state'		=> 'hello-world',
