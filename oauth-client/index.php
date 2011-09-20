@@ -15,7 +15,7 @@
 		'state'		=> 'hello-world',
 	);
 
-	$base_url = "http://api.alpha.glitch.com/oauth2/authorize";
+	$base_url = $api_base."/oauth2/authorize";
 
 	function build_url($base_url, $args, $more=array()){
 

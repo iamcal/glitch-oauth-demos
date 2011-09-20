@@ -43,7 +43,7 @@
 
 	if ($_GET['exchange']){
 
-		$ret = curl_http_post("http://api.alpha.glitch.com/oauth2/token", $args);
+		$ret = curl_http_post($api_base."/oauth2/token", $args);
 
 
 		#
@@ -125,7 +125,7 @@
 
 	<p>We will call an API method using this token, in the iframe below:</p>
 
-	<iframe width="100%" height="200" src="http://api.alpha.glitch.com/simple/auth.check?oauth_token=<?=HtmlSpecialChars($obj['access_token'])?>&simple=1&pretty=1"></iframe>
+	<iframe width="100%" height="200" src="<?=$api_base?>/simple/auth.check?oauth_token=<?=HtmlSpecialChars($obj['access_token'])?>&simple=1&pretty=1"></iframe>
 
 	<p>That concludes the demo. In your application, you would then store the <code>access_token</code> somewhere on the server and use it for subsequent requests.</p>
 <?
@@ -141,7 +141,7 @@
 
 <p>The user has authorized our request and we have been returned the code <code><?=HtmlSpecialChars($_GET['code'])?></code>.</p>
 
-<p>We now need to exchange this code for an access token, by calling the token endpoint <code>http://api.alpha.glitch.com/oauth2/token</code> with the following parameters:</p>
+<p>We now need to exchange this code for an access token, by calling the token endpoint <code><?=$api_base?>/oauth2/token</code> with the following parameters:</p>
 
 <ul>
 <? foreach ($args as $k => $v){ ?>

@@ -1,4 +1,6 @@
 <?
+	include('config.php');
+
 	include('head.txt');
 ?>
 
@@ -58,7 +60,7 @@ window.onload = function(){
 	// if we got an access token, make a request
 
 	if (obj.access_token){
-		document.getElementById('call-frame').src = "http://api.alpha.glitch.com/simple/auth.check?oauth_token="+obj.access_token+"&simple=1&pretty=1";
+		document.getElementById('call-frame').src = "<?=$api_base?>/simple/auth.check?oauth_token="+obj.access_token+"&simple=1&pretty=1";
 		document.getElementById('api-request').style.display = 'block';
 	}
 };
